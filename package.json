@@ -2,7 +2,7 @@
   "name": "bn-trackr",
   "version": "1.0.0",
   "private": true,
-  "homepage": "https://zinniie.github.io/bn-trackr",
+  "homepage": "https://zinniie.github.io/bn_trackr",
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
