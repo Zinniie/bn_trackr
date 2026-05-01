@@ -18,7 +18,6 @@
 BN TrackR is a production-quality personal finance dashboard demonstrating real-world React + TypeScript patterns — Zustand state management, interactive Recharts visualisations, CSV import/export, budget alerts, and a fully responsive design system.
 
 **Core features:**
-
 - Dashboard with income/expense charts, category breakdown, and account overview
 - Transaction management — add, delete, search, filter by category and date range
 - CSV import with auto column mapping and CSV export
@@ -31,8 +30,8 @@ BN TrackR is a production-quality personal finance dashboard demonstrating real-
 
 ## Screenshots
 
-| Dashboard          | Transactions       | Analytics          | Budgets            |
-| ------------------ | ------------------ | ------------------ | ------------------ |
+| Dashboard | Transactions | Analytics | Budgets |
+|-----------|-------------|-----------|---------|
 | _(add screenshot)_ | _(add screenshot)_ | _(add screenshot)_ | _(add screenshot)_ |
 
 ---
@@ -65,24 +64,23 @@ src/
 
 ## Tech Stack
 
-| Layer       | Technology                               |
-| ----------- | ---------------------------------------- |
-| Framework   | React 18 + TypeScript 5                  |
-| Build tool  | Vite 5                                   |
-| State       | Zustand 4 + persist middleware           |
-| Charts      | Recharts 2                               |
-| CSV parsing | PapaParse                                |
-| Icons       | Lucide React                             |
-| Date utils  | date-fns                                 |
-| Deployment  | GitHub Pages via gh-pages                |
-| Styling     | Custom CSS design system (no UI library) |
+| Layer | Technology |
+|-------|-----------|
+| Framework | React 18 + TypeScript 5 |
+| Build tool | Vite 5 |
+| State | Zustand 4 + persist middleware |
+| Charts | Recharts 2 |
+| CSV parsing | PapaParse |
+| Icons | Lucide React |
+| Date utils | date-fns |
+| Deployment | GitHub Pages via gh-pages |
+| Styling | Custom CSS design system (no UI library) |
 
 ---
 
 ## Getting Started
 
 ### Prerequisites
-
 - Node.js `>=18`
 - npm or yarn
 
@@ -141,12 +139,12 @@ Papa.parse(file, {
   skipEmptyLines: true,
   complete: (results) => {
     const parsed = results.data.map((r) => ({
-      date: r.Date || r.date,
+      date:        r.Date || r.date,
       description: r.Description || r.Payee,
-      amount: parseFloat(r.Amount),
+      amount:      parseFloat(r.Amount),
       // auto-detect income vs expense from sign
-      type: parseFloat(r.Amount) >= 0 ? "income" : "expense",
-      category: r.Category || "Other",
+      type:        parseFloat(r.Amount) >= 0 ? 'income' : 'expense',
+      category:    r.Category || 'Other',
     }));
     importTransactions(parsed);
   },
