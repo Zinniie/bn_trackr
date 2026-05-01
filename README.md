@@ -30,9 +30,20 @@ BN TrackR is a production-quality personal finance dashboard demonstrating real-
 
 ## Screenshots
 
-| Dashboard | Transactions | Analytics | Budgets |
-|-----------|-------------|-----------|---------|
-| _(add screenshot)_ | _(add screenshot)_ | _(add screenshot)_ | _(add screenshot)_ |
+### Dashboard
+![Dashboard](https://github.com/user-attachments/assets/73853d65-1bbb-412f-a7a6-96e81b4f7ced)
+
+### Transactions
+![Transactions](https://github.com/user-attachments/assets/1a4e0185-6a6a-46c9-b2e6-81ee0a140a95)
+
+### Analytics
+![Analytics](https://github.com/user-attachments/assets/a239ecf1-cf17-43cd-be35-415731ad1e04)
+
+### Budgets
+![Budgets](https://github.com/user-attachments/assets/6fecce2b-a831-4fe0-8351-9f72b80e485f)
+
+### Notifications
+![Notifications](https://github.com/user-attachments/assets/30c0d018-5a1d-4746-b4f1-e88d90e7eb3c)
 
 ---
 
